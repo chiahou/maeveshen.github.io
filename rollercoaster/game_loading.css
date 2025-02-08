@@ -1,4 +1,5 @@
 img {
+	width: 50vw;
 	animation-name: spin;
   animation-duration: 2000ms;
   animation-iteration-count: infinite;
