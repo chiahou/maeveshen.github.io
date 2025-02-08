@@ -1,0 +1,128 @@
+/**Add animation to the rocket image**/
+div.rocket-container > img {
+  width: 60px;
+  justify-content: center;
+  animation: launching 3s linear 0s infinite;
+  padding: 32px;
+}
+/**Animation configurations**/
+@keyframes launching {
+  0% {
+    transform: translateY(10px);
+  }
+  3% {
+    transform: translateY(10px) rotate(8deg);
+  }
+  6% {
+    transform: translateY(10px) rotate(-8deg);
+  }
+  9% {
+    transform: translateY(10px) rotate(8deg);
+  }
+  12% {
+    transform: translateY(10px) rotate(-8deg);
+  }
+  15% {
+    transform: translateY(15px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  85% {
+    opacity: 1;
+    transform: translateY(-60px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-70px);
+  }
+}
+
+.activeWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px auto;
+  color: #00568c;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 8px;
+  /**Background transitioning**/
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0px 0px 0px 0px rgba(111, 111, 111, 0);
+  height: 280px;
+  width: 300px;
+  transition: background-color 1s, width 1s, height 1s;
+}
+
+.inactiveWrapper {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px auto;
+  color: #00568c;
+  overflow: hidden;
+  height: 400px;
+  width: 680px;
+  box-shadow: 0px 1px 2px 2px rgba(111, 111, 111, 0.2);
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.text-area {
+  height: 80px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+}
+
+/**Animation configurations**/
+.text-area > * {
+  animation: flickering 600ms ease-in-out infinite alternate;
+}
+
+@keyframes flickering {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+
+.title {
+  font-size: 36px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+.content {
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 400;
+}
+
+.rocket-container {
+  height: 120px;
+  overflow: hidden;
+  align-content: center;
+}
+
+body {
+  background-color: #eee;
+  font-family: noto sans;
+}
+
+p {
+  font-size: 14px;
+  color: #2d2d2d;
+  margin: 4px;
+}
+.info {
+  margin: 16px;
+  border: 1px solid #999;
+  padding: 16px;
+  border-radius: 8px;
+}
