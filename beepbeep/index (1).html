@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Demo 1: Basic CSS Sprite Animation</h1>
+
+    <div class="ryu" id="myElement"></div>
+    <button id="controlButton">Beep-Beep</button>
+    <script>
+      const element = document.getElementById("myElement");
+      const controlButton = document.getElementById("controlButton");
+      let animationDuration = 2000; // Initial duration in milliseconds
+
+      // Function to update animation duration
+      function updateAnimationDuration() {
+        element.style.animationDuration = animationDuration / 1000 + "s";
+      }
+
+      // Add click event listener to control button
+      controlButton.addEventListener("click", function () {
+        // Deduct 400ms from animation duration
+        animationDuration -= 400;
+        if (animationDuration < 400) {
+          animationDuration = 400; // Ensure duration doesn't go negative
+        }
+        updateAnimationDuration(); // Update the animation duration
+      });
+    </script>
+  </body>
+</html>

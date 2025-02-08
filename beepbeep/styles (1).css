@@ -1,0 +1,48 @@
+body {
+  padding: 20px;
+  text-align: center;
+}
+
+.ryu {
+  transform: scale(0.8);
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  background: url("driving.png") no-repeat 0 0%;
+  animation: driving 2000ms steps(8) infinite;
+}
+
+@keyframes driving {
+  from {
+    background-position: 0 0%;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+
+h1 {
+  font-size: 1.2em;
+}
+
+.p {
+  margin-top: 120px;
+  font-size: 14px;
+}
+
+button {
+  color: #2d2d2d;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #acacad;
+  padding: 8px 16px;
+}
+button:hover {
+  box-shadow: 2px 2px 0px #2d2d2d;
+  transition: all;
+  cursor: pointer;
+}
+button.clicked {
+  border: 1 solid #2d2d2d;
+  animation: shimmering 200ms 3 cubic-bezier(0.47, 0, 0.745, 0.715);
+}
