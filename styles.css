@@ -1,0 +1,60 @@
+/** Add animations to the images **/
+.satellite {
+  animation: spinning 12s linear 0s infinite forwards;
+}
+.planet {
+  position: absolute;
+  top: 16px;
+  left: 32px;
+  animation: floating 4s ease-in-out 0s infinite alternate;
+}
+/** Animation configurations**/
+@keyframes spinning {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/** Animation configurations**/
+@keyframes floating {
+  0% {
+    transform: rotate(-2deg) translateX(2px);
+  }
+  50% {
+    transform: rotate(-4deg) translateX(-2px);
+  }
+  100% {
+    transform: rotate(-16deg) translateX(2px);
+  }
+}
+
+.App {
+  font-family: noto sans, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+div:has(img) {
+  margin-top: 48px;
+  position: relative;
+  align-items: center;
+}
+
+h1 {
+  font-size: 36px;
+  color: #00568c;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+h2 {
+  font-size: 16px;
+  color: #00568c;
+  font-weight: 400;
+  margin: 0px;
+}
