@@ -1,6 +1,4 @@
-.svg {
-  width: 50vw;
-}
+
 /** Add animations to the images **/
 .satellite {
   animation: spinning 12s linear 0s infinite forwards;
@@ -46,10 +44,8 @@ body {
   align-items: center;
 }
 
-div:has(img) {
-  transform:scale(2);
-  margin-top: 48px;
-  position: relative;
+.svg {
+  width: 50vw;
   align-items: center;
 }
 
