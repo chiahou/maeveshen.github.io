@@ -34,6 +34,7 @@
 }
 
 body {
+  background-color: #EAE6E1;
   font-family: noto sans, sans-serif;
   text-align: center;
   display: flex;
@@ -43,6 +44,7 @@ body {
 }
 
 div:has(img) {
+  transform:scale(2);
   margin-top: 48px;
   position: relative;
   align-items: center;
