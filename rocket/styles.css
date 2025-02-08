@@ -6,7 +6,7 @@
   justify-content:center;
 }
 div.rocket-container > img {
-  width: 60px;
+  width: 50vw
   justify-content: center;
   animation: launching 3s linear 0s infinite;
   padding: 32px;
@@ -108,12 +108,6 @@ div.rocket-container > img {
   font-size: 16px;
   font-family: Arial;
   font-weight: 400;
-}
-
-.rocket-container {
-  height: 120px;
-  overflow: hidden;
-  align-content: center;
 }
 
 body {
