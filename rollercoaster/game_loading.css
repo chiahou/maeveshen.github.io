@@ -1,3 +1,10 @@
+body {
+	background-color: #EAE6E1;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items: center;
+}
 img {
 	width: 50vw;
 	animation-name: spin;
