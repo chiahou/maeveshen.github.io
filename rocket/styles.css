@@ -1,4 +1,10 @@
 /**Add animation to the rocket image**/
+.rocket-container {
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
 div.rocket-container > img {
   width: 60px;
   justify-content: center;
@@ -113,6 +119,9 @@ div.rocket-container > img {
 body {
   background-color: #eee;
   font-family: noto sans;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
 }
 
 p {
