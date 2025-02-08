@@ -4,8 +4,8 @@ body {
 }
 
 .ryu {
-  transform: scale(0.8);
-  width: 80%;
+  width:400px;
+  height:300px;
   margin: 0 auto;
   background: url("driving.png") no-repeat 0 0%;
   animation: driving 2000ms steps(8) infinite;
